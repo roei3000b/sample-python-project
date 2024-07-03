@@ -40,4 +40,5 @@ jobs:
       if: always()
       with:
         name: Pytest
+        reporter: jest-junit
         path: report.xml
