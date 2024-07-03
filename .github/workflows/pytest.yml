@@ -41,4 +41,4 @@ jobs:
       with:
         name: Pytest results
         path: report.xml
-        reporter: junit
+        reporter: jest-junit
