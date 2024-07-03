@@ -39,4 +39,5 @@ jobs:
       uses: dorny/test-reporter@v1
       if: always()
       with:
+        name: Pytest
         path: report.xml
