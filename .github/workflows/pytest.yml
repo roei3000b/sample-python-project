@@ -36,7 +36,7 @@ jobs:
         path: report.xml
 
     - name: Create test annotations
-      uses: EnricoMi/publish-unit-test-result-action@v2
+      uses: dorny/test-reporter@v1
       if: always()
       with:
-        report_paths: report.xml
+        path: report.xml
