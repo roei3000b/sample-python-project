@@ -36,9 +36,7 @@ jobs:
         path: report.xml
 
     - name: Create test annotations
-      uses: dorny/test-reporter@v1.9.1
+      uses: mikepenz/action-junit-report@v4
       if: always()
       with:
-        name: Pytest results
-        path: report.xml
-        reporter: junit
+        report_paths: report.xml
