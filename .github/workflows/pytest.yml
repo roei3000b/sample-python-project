@@ -1,4 +1,3 @@
-# .github/workflows/pytest.yml
 name: Python package
 
 on:
@@ -37,7 +36,7 @@ jobs:
         path: report.xml
 
     - name: Create test annotations
-      uses: dorny/test-reporter@v1
+      uses: dorny/test-reporter@v1.9.1
       if: always()
       with:
         name: Pytest results
